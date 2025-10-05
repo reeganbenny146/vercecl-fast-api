@@ -1,5 +1,15 @@
+name: TDS Test Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
   test:
+    runs-on: ubuntu-latest  # ✅ Required property added
+
     steps:
       - name: 21f3000146@ds.study.iitm.ac.in
         run: echo "Hello, world!"
